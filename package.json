@@ -1,0 +1,17 @@
+{
+  "name": "iodine-software-interview",
+  "version": "1.0.0",
+  "dependencies": {
+    "cypress-iframe": "^1.0.1"
+  },
+  "devDependencies": {
+    "cypress": "^10.3.0"
+  },
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
