@@ -5,8 +5,8 @@ export class CommonMethods {
     };
 
     //this method will wait for the document to be loaded
-    waitForDocumentToBeLoaded(height) {
-        cy.get('#gnewtonIframe', {timeout: 10000}).should('have.attr', 'style', `overflow: hidden; height: ${height}px;`);
+    waitForDocumentToBeLoaded() {
+        cy.wait(650);
     };
 
     //this method will click on any web element inserted as parameter, with force true

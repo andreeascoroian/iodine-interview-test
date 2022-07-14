@@ -9,13 +9,13 @@ export class Careers {
     };
 
     clickOnApplyForThisPosition() {
-        cy.wait(500)
+        commonMethods.waitForDocumentToBeLoaded();
         getIframeBody().find(careersSelectors.APPLY_FOR_THIS_POSITION_BUTTON).scrollIntoView();
         getIframeBody().find(careersSelectors.APPLY_FOR_THIS_POSITION_BUTTON).click();
     };
 
     answerToFirstQuestions() {
-        cy.wait(500)
+        commonMethods.waitForDocumentToBeLoaded();
         getIframeBody().find(careersSelectors.YES_ANSWER).eq(0).click();
         getIframeBody().find(careersSelectors.YES_ANSWER).eq(1).click();
     };
@@ -68,18 +68,18 @@ export class Careers {
     navigateToPersonalInformationPage() {
         this.answerToFirstQuestions();
         this.clickOnContinue();
-        cy.wait(500);
+        commonMethods.waitForDocumentToBeLoaded();
         this.clickOnContinue();
-        cy.wait(500);
+        commonMethods.waitForDocumentToBeLoaded();
         this.selectGender();
         this.selectRace();
         this.clickOnContinue();
-        cy.wait(500);
+        commonMethods.waitForDocumentToBeLoaded();
         this.selectVeteranChoice();
         this.clickOnContinue();
-        cy.wait(500);
+        commonMethods.waitForDocumentToBeLoaded();
         this.clickOnContinue();
-        cy.wait(500);
+        commonMethods.waitForDocumentToBeLoaded();
     };
 }
 

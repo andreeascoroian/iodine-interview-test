@@ -8,7 +8,7 @@ module.exports = defineConfig({
   experimentalSessionSupport: false,
   viewportWidth: 1920,
   viewportHeight: 1080,
-  retries: 0,
+  retries: 2,
   defaultCommandTimeout: 30000,
   e2e: {
     setupNodeEvents(on, config) {
